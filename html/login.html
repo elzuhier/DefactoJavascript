@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body class="bd">
+    <a href="home.html" class="im"><img src="../images/Defacologo.png" alt="Defacto"></a>
+    <div class="main">
+        <ul class="nav nav-tabs justify-content-center bar" role="tablist">
+            <li class="nav-item lst" role="presentation">
+                <button  class="nav-link active btn1 ac" id="loginTab" data-bs-toggle="tab" data-bs-target="#login"
+                    type="button" role="tab" aria-controls="login" aria-selected="true"><b>SIGN
+                        IN</b></button>
+            </li>
+            <li class="nav-item lst" role="presentation">
+                <button class="nav-link btn2 ac" id="registerTab" data-bs-toggle="tab" data-bs-target="#register"
+                    type="button" role="tab" aria-controls="register" aria-selected="false"><b> Register</b></button>
+            </li>
+            <li class="nav-item lst" role="presentation">
+                <button class="nav-link btn3 ac" id="guestTab" data-bs-toggle="tab" data-bs-target="#guest"
+                    type="button" role="tab" aria-controls="guest" aria-selected="false"> <b>Continue as guest</b>
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="login" class="tab-pane fade show active justify-content-center" role="tabpanel"
+                aria-labelledby="loginTab">
+                <form class="log">
+                    <label for="email">E-mail Adress</label><br>
+                    <input type="email" id="email" class="inpt" name="email" required><br><br>
+                    <label for="pass">Password</label><br>
+                    <div class="passCont">
+                        <input type="password" id="pass" class="inpt" onfocus="event.preventDefault();" name="password"
+                            required>
+                        <i class="fas fa-eye" id="icon" onmousedown="showPass(this)"></i>
+                    </div><br><br>
+                    <a href="" class="ref" id="Forgot">Forgot Password</a>
+                    <input type="checkbox" id="rem" name="rememberMe" checked>
+                    <label for="rem">Remember me</label><br><br>
+                    <input type="submit" value="SIGN IN" id="sign"><br><br><br>
+                    <a href="" class="ref" id="home">Homepage</a>
+                </form>
+            </div>
+            <div id="register" class="tab-pane fade" role="tabpanel" aria-labelledby="registerTab">
+                <form class="regist">
+                    <label for="fname">Name</label>
+                    <label for="Last" class="lsname">Last name</label><br>
+                    <input type="text" id="fname" class="inpst" name="fname" required>
+                    <input type="text" id="last" class="inpst" name="last" required><br><br>
+                    <label for="em">E-mail Adress</label>
+                    <label for="mob" class="moble">Mobile Phone</label><br>
+                    <input type="email" id="emi" class="inpst" name="em" required>
+                    <select name="n" id="nu" disabled>
+                        <option value="+20">+20</option>
+                    </select>
+                    <select name="nm" id="nm" required>
+                        <option value="select">select</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="15">15</option>
+                    </select>
+                    <input type="tel" id="mob" required> <br><br>
+                    <label for="gender">Gender</label>
+                    <label for="DateOfBirth" class="dbirth">Date of Birth</label><br>
+                    <select name="gender" id="gender" class="inpst">
+                        <option value="select">select</option>
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+                    <select name="dy" id="dy" onclick="days()">
+                        <option value="day">Day</option>
+
+                    </select>
+                    <select name="moth" id="moth" onclick="month()">
+                        <option value="Month">Month</option>
+
+                    </select>
+                    <select name="yer" id="yer" onclick="years()">
+                        <option value="year">Year</option>
+
+                    </select><br>
+                    <label for="pas" id="pss">Password</label>
+                    <label for="conpass" class="confrm">Confirm Password</label><br>
+                    <input type="text" id="pas" class="inpst" name="pasword" required>
+                    <input type="text" id="conpass" class="inpst" name="conPassword" required><br><br>
+                    <div class="cont-check">
+                        <div class="checken p-1" onclick="clicking(event.target)"></div>
+                    </div>
+                    <label class="like">I would like to sign up for the Defacto newsletter, receive Defacto survey
+                        inquiries and accept to receive E-Mails /SMS /calls for marketing purposes. I can unsubscribe
+                        from the newsletter and survey inquiries at any time for the future, e.g. by clicking on the
+                        unsubscribe link or sending an e-mail to dataprotection@defacto.com. All personal data are
+                        protected according to the law 151 year 2020 “ General Personal Data Protection Law. </label>
+                    <div class="cont-check">
+                        <div class="checken p-1" onclick="clicking(this)"></div>
+                    </div>
+                    <label class="like">I have read and understand the <a href="" class="ref"> Website Terms Use </a>
+                        and the <a href="" class="ref"> Privacy Policy </a> by clicking of the "Register"
+                        button.</label><br><br>
+                    <input type="submit" value="Register" class="reg"><br><br><br>
+                    <a href="" class="ho">Homepage</a>
+                </form>
+            </div>
+            <div id="guest" class="tab-pane fade continu" role="tabpanel" aria-labelledby="guestTab">
+                <p class="if"> If you want, you can register at the end of the order and save your information for
+                    future purchases.
+                </p><br>
+                <form>
+                    <label for="em">E-mail Adress</label><br>
+                    <input type="email" id="em" name="email" required><br><br>
+                    <div class="cont-check">
+                        <div class="checken p-1" onclick="clicking(this)"></div>
+                    </div>
+                    <label for="would" class="I">
+                        I would like to sign up for the Defacto newsletter, receive<br> Defacto survey
+                        inquiries and accept to receive E-Mails /SMS <br> /calls for marketing purposes. I can
+                        unsubscribe
+                        from the <br> newsletter and survey inquiries at any time for the future, e.g.<br> by clicking
+                        on the
+                        unsubscribe link or sending an e-mail to<br> dataprotection@defacto.com. All personal data are
+                        protected <br> according to the law 151 year 2020 “ General Personal Data<br> Protection Law.
+                    </label><br>
+                    <div class="cont-check">
+                        <div class="checken p-1" onclick="clicking(this)"></div>
+                    </div>
+                    <label for="have" class="I">
+                        I have read and understand the <a href="" class="ref">Website Terms Use</a>and<br> the <a
+                            href="" class="ref">Privacy Policy</a>by clicking of the "Continue" button.</label><br><br>
+                    <input type="submit" value="Continue" name="continue" class="cont">
+
+                </form>
+                <br><br><br>
+                <a href="" class="hom">Homepage</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function color() {
+            this.style.color = "red";
+        }
+        var select = document.getElementById("yer");
+        function years() {
+            for (let i = 2005; i >= 1922; i--) {
+                var opt = document.createElement('option');
+                opt.innerHTML = opt.value = i;
+                select.appendChild(opt)
+            }
+        }
+        var selct = document.getElementById("moth");
+        function month() {
+            for (let i = 1; i <= 12; i++) {
+                var optn = document.createElement('option');
+                optn.innerHTML = optn.value = i;
+                selct.appendChild(optn)
+            }
+
+        }
+        var slect = document.getElementById("dy");
+        function days() {
+            for (let i = 1; i <= 31; i++) {
+                var opt = document.createElement('option');
+                opt.innerHTML = opt.value = i;
+                slect.appendChild(opt)
+            }
+        }
+        function clicking(ev) {
+            // var check=document.querySelectorAll(".checken")
+            //  for(let i=0;i<check.length;i++)
+            //  {
+            //   if(ev.button==0)
+            ev.classList.toggle("click")
+        }
+        // }
+        function showPass(e) {
+            var inp = document.getElementById("pass");
+
+            if (inp.type == "password") {
+                inp.type = 'text';
+            }
+
+            else
+                inp.type = 'password';;
+        }
+        var tabEl = document.querySelectorAll('button[data-bs-toggle="tab"]')
+        
+        for(let i=0;i<tabEl.length;i++)
+        {
+            
+            tabEl[i].addEventListener('shown.bs.tab', function (event) {
+            event.target.style.color="orange"; // newly activated tab
+         //   event.relatedTarget.color="black";
+        }
+        
+            
+        )}
+
+
+    </script>
+</body>
+
+</html>

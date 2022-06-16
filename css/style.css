@@ -1,0 +1,286 @@
+.bd{
+    background-color: #f2f2f2;
+}
+.im{
+    margin-left: 40%;
+}
+.main{
+    margin: 1% 25% ;
+    padding-bottom: 12%;
+    border-radius: 0.3%;
+    background-color: white;
+
+   
+}
+.continu{
+    margin-left: 23%;
+    margin-right: 15%;
+
+}
+.bar{
+    padding-top: 4%;
+   
+}
+.ac:hover{
+    color: black;
+    opacity: 0.5; 
+}
+
+.btn1{
+   width: 200px;
+   color: black;
+}
+
+.btn2{
+    width: 200px;
+    color: black;
+}
+.btn3{
+    width: 200px;
+    color: black;
+}
+.if{
+    margin-top: 6%;
+    font-size: 80%;
+}
+#em{
+    width: 90%;
+    margin-top: 2%;
+    opacity: 0.4;
+    padding-bottom: 3%;
+}
+.I{
+    font-size: 85%;
+    margin-left: 7%;
+}
+.ch{
+    width: 15px;
+    height: 15px;
+}
+.log{
+    margin-top: 4%;
+    margin-left: 23%;
+    margin-right: 20%;
+}
+.inpt{
+    width: 105%;
+    margin-top: 2%;
+    opacity: 0.6;
+    padding-bottom: 4%;
+    
+}
+.ref{
+    color: black;
+}
+#Forgot:hover{
+    color: black;
+}
+#rem{
+    margin-left: 33%;
+}
+#sign{
+    width: 105%;
+    background-color: #ff5700;
+    border-color: #ff5700;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-weight: bold;
+}
+#sign:hover{
+    opacity: 0.5;
+}
+#home{
+    margin-left: 40%;
+}
+#home:hover{
+    color:  #ff5700;
+}
+
+.cont{
+    width: 90%;
+    background-color: #ff5700;
+    border-color: #ff5700;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-weight: bold;
+}
+.cont:hover{
+    opacity: 0.5;
+}
+.hom{
+    margin-left: 35%;
+    color: black;
+}
+.hom:hover{
+    color: #ff5700; 
+}
+.ref{
+    color: black;
+}
+.ref:hover{
+    color: #ff5700;
+}
+.regist{
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 4%;
+}
+.lsname{
+    margin-left: 46%;
+}
+.moble{
+    margin-left: 37%;
+}
+.dbirth{
+    margin-left: 44%;
+}
+.confrm{
+margin-left: 42%;
+}
+.inpst{
+    width: 45%;
+    padding-bottom: 2%;
+    opacity: 0.5;
+    margin-top: 2%;
+    
+}
+
+#last
+{
+    margin-left: 8%;
+}
+#nu{
+    width: 13%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left: 1%;
+    margin-left: 8%;
+    margin-top: 4%;
+}
+#nm{
+    width: 11%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 2%;
+}
+#mob{
+    width: 20%;
+    opacity: 0.5;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+#gender{
+    padding-bottom: 3%;
+}
+#dy{
+    margin-left: 8%;
+    width: 15%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left: 2%;
+    opacity: 0.8;  
+    font-size: 15px; 
+}
+#moth{
+    margin-left: 2%;
+    width: 13%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    padding-left: 2%;
+    opacity: 0.8;
+    font-size: 15px;
+}
+#yer{
+    margin-left: 2%;
+    width: 12%;
+    padding-left: 2%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    opacity: 0.8;
+    font-size: 15px;
+}
+#pss{
+    margin-top: 2%;
+}
+#conpass{
+   margin-left: 8%;
+}
+.cont-check{
+    border: 1px solid black;
+    height: 17px;
+    width: 18px;
+    border-radius: 1.5px;
+    position: absolute;
+    
+}
+.checken{
+     
+      background-color: white;
+      border-radius: 1.5px;
+      margin-left: 2px;
+      margin-top: 2px;
+      height: 11px;
+      width: 11px;
+}
+.click{
+    background-color: #ff5700;
+}
+.like{
+    font-size: 14px;
+    margin-left: 4%;
+}
+.reg{
+    width: 60%;
+    background-color: #ff5700;
+    border-color: #ff5700;
+    border: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%; 
+    
+    
+}
+.reg:hover{
+    opacity: 0.5;
+}
+.ho{
+    margin-left: 44%;
+    color: black;
+}
+.ho:hover{
+  color:#ff5700;
+}
+#pass{
+    border: none;
+    outline: none;
+}
+#pass:active{
+    border: none;
+    outline: none;
+}
+.passCont{
+    border: 1px solid black;
+  display: flex;
+  width: 105%;
+  margin-top: 2%;
+  opacity: 0.6;
+  /* padding-bottom: 4%; */
+}
+#pass:focus .passCont{
+    opacity:1;
+}
+
+
+#icon{
+    margin-top: 15px;
+    margin-right: 11px;
+   
+}

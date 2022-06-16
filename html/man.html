@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <!-- MAN.css file -->
+    <link rel="stylesheet" href="../css/man.css">
+    <!-- Normalize the page -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <!-- Font Awesom file -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- google-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Js File  -->
+    
+    <title>Man</title>
+    
+</head>
+<body>
+    <header>
+         <!-- header one  -->
+     <div class="container-fluid px-0">
+        <div
+          class="w-100 d-flex justify-content-center bg-black"
+          style="color: #999a97; font-size: small"
+        >
+          FREE SHIPPING FOR ORDER ABOVE 599 EGP
+        </div>
+    </div> 
+        <div class="container mt-3">
+            <div class="row">
+              <div class="col-2">
+                <div class="logo px-0 pe-3">
+                  <a href="home.html">
+                    <img src="../images/defacto-logo.png" alt="" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="search-box d-flex px-1">
+                  <i class="bi bi-search h-100 pt-1"></i>
+                  <input type="search" name="search" id="search" onkeyup="serchFun(event)"/>
+                  <input type="submit" class="mt-1 mb-1 me-0" value="search" />
+                </div>
+              </div>
+              <div class="col-5">
+                <ul class="nav-Icons d-flex justify-content-around" >
+                  <li onmouseover="appear()" onmouseout="disappear()" >
+                    <i class="fas fa-user-alt" ></i>
+                    <span style="position: relative;">My Account</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-suit-heart"></i>
+                    <span>Favourit</span>
+                  </li>
+                  <li id="cartLinkGo">
+                    <a href="addCart.html"><i class="bi bi-handbag"></i></a>
+                    <span>Shopping cart</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9">
+                <div class="category-links mt-3">
+                  <ul class="d-flex justify-content-around">
+                    <li onmouseout="catDisAppear(this)" onmouseover="catApper(this)">
+                      <a href="#"> NEW ARRIVALS</a>
+                      <div class="links pt-3 pb-2" >
+                        <div class="container">
+                          <div class="row">
+                            <div class="contetn d-flex">
+                              <div class="col-8">
+                                <span> category </span>
+                                <div class="new-Arivall-images-grid d-flex-column">
+                                  <div class="first d-flex">
+                                    <div class="new-arival-image me-2">
+                                      <img
+                                        src="../images/ma_girl_new.jpg"
+                                        class="w-100"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="new-arival-image me-2">
+                                      <img
+                                        src="../images/ma_man_new.jpg"
+                                        class="w-100"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="sec d-flex mt-2"
+                                  >
+                                    <div class="new-arival-image me-2">
+                                      <img
+                                        src="../images/ma_woman_new.jpg"
+                                        class="w-100"
+                                        alt=""
+                                      />
+                                    </div>
+                                    <div class="new-arival-image me-2">
+                                      <img
+                                        src="../images/bebekrevize1.jpg"
+                                        class="w-100"
+                                        alt=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-4">
+                                <div class="features-side ms-3">
+                                  <span> FEATURED PRODUCTS</span>
+                                  <ul class="mt-3">
+                                    <li><a href="#services">HARRY POTTER</a></li>
+                                    <li><a href="#protofolio">PLUS SIZE</a></li>
+                                    <li><a href="#about">LICENSED PRODUCTS</a></li>
+                                    <li>
+                                      <a href="#contacts">NBA LICENSED PRODUCTS</a>
+                                    </li>
+                                    <li><a href="#contacts">MATERNITY WEAR</a></li>
+                                    <li>
+                                      <a href="#contacts">CONSERVATIVE COLLECTION</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li onmouseout="catDisAppear(this)" onmouseover="catApper(this)">
+                      <a href="#"> WOMAN</a>
+                      <div class="woman-links pt-3 pb-2">
+                        
+                          <div class="row">
+                            <div
+                              class="
+                                woman-links-content
+                                d-flex
+                                justify-content-between
+                              "
+                            >
+                              <div class="col-5 me-5">
+                                <div class="woman-first">
+                                  <span>APPAREL</span>
+                                  <ul>
+                                    <li><a href="man.html" class="woman-col-links">KNITWEAR</a></li>
+                                    <li><a href="man.html" class="woman-col-links">SHIRT&BLOUSE</a></li>
+                                    <li><a href="man.html" class="woman-col-links">SWEATSHIRTS&HOODIES</a></li>
+                                    <li><a href="man.html" class="woman-col-links">JEANS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">TROUSERS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">TUNICS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">DRESS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">SKIRTS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">T-SHIRTS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">CARDIGANS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">OVERSHIRT</a></li>
+                                    <li><a href="man.html" class="woman-col-links">SWEATPANTS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">LEGGINGS</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-7 ms-5">
+                                <div class="woman-sec">
+                                  <span>COLLECTIONS</span>
+                                  <ul>
+                                    <li><a href="man.html" class="woman-col-links">HOMEWEAR</a></li>
+                                    <li><a href="man.html" class="woman-col-links">PLUS SIZE</a></li>
+                                    <li><a href="man.html" class="woman-col-links">SPORTSWEAR</a></li>
+                                    <li><a href="man.html" class="woman-col-links">ACCESSSORIES</a></li>
+                                    <li><a href="man.html" class="woman-col-links">UNDERWEAR</a></li>
+                                    <li><a href="man.html" class="woman-col-links">OVERSIZE TREND</a></li>
+                                    <li><a href="man.html" class="woman-col-links">FALL DRESS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">CONSERVATIVE COLLECTION</a></li>
+                                    <li><a href="man.html" class="woman-col-links">LICENSED PRODUCTS</a></li>
+                                    <li><a href="man.html" class="woman-col-links">CARDIGANS</a></li>
+                                    <li><a href="man.html" class="woman-col-links" >NBA LICENSED PRODUCTS</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    </li>
+                    <li onmouseout="catDisAppear(this)" onmouseover="catApper(this)">
+                      <a href="#">MAN</a>
+                      <div class="man-links pt-3 pb-2">
+                       
+                          <div class="row">
+                            <div
+                              class="man-links-content d-flex justify-content-between"
+                            >
+                              <div class="col-5 me-5">
+                                <div class="man-first">
+                                  <span>APPAREL</span>
+                                  <ul>
+                                    <li><a href="man.html" class="man-col-links" >KNITWEAR</a></li>
+                                    <li><a href="man.html" class="man-col-links" >SHIRT&BLOUSE</a></li>
+                                    <li><a href="man.html" class="man-col-links" >SWEATSHIRTS&HOODIES</a></li>
+                                    <li><a href="man.html" class="man-col-links" >JEANS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >TROUSERS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >TUNICS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >DRESS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >SKIRTS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >T-SHIRTS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >CARDIGANS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >OVERSHIRT</a></li>
+                                    <li><a href="man.html" class="man-col-links" >SWEATPANTS</a></li>
+                                    <li><a href="man.html" class="man-col-links" >LEGGINGS</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-7 ms-5">
+                                <div class="man-sec">
+                                  <span>COLLECTIONS</span>
+                                  <ul>
+                                    <li><a href="man.html" class="kid-col-links">HOMEWEAR</a></li>
+                                    <li><a href="man.html" class="kid-col-links">PLUS SIZE</a></li>
+                                    <li><a href="man.html" class="kid-col-links">SPORTSWEAR</a></li>
+                                    <li><a href="man.html" class="kid-col-links">ACCESSSORIES</a></li>
+                                    <li><a href="man.html" class="kid-col-links">UNDERWEAR</a></li>
+                                    <li><a href="man.html" class="kid-col-links">OVERSIZE TREND</a></li>
+                                    <li><a href="man.html" class="kid-col-links">FALL DRESS</a></li>
+                                    <li><a href="man.html" class="kid-col-links">CONSERVATIVE COLLECTION</a></li>
+                                    <li><a href="man.html" class="kid-col-links">LICENSED PRODUCTS</a></li>
+                                    <li><a href="man.html" class="kid-col-links">CARDIGANS</a></li>
+                                    <li><a href="man.html" class="kid-col-links">NBA LICENSED PRODUCTS</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">KIDS & TEENS</a>
+                    </li>
+                    <li>
+                      <a href="#">BABY</a>
+                    </li>
+                    <li>
+                      <a href="#"> SHOES</a>
+                    </li>
+                    <li>
+                      <a href="#">ACCESSORIES</a>
+                    </li>
+                    <li>
+                      <a href="#">SALE</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <!-- end navbar -->
+    </header>
+    <div class="container">
+    <!-- (1st row) Activity tracker , Category's name & item count -->
+    
+        <div class="row-1 bg-grey" >
+           <a href="home.html"> <span onmouseout="changeColorMouseOut()" onmouseover="changeColorOnMouseOver()" class="activity-tracker-span" id="activity-tracker-span">Home page</span>
+           </a>
+        <div>
+            <span class="pageNameC" id="pageName">MAN</span>
+            <span class="item-count-span" id="item-count-span">Item Count 3560</span>
+        </div>
+        </div>
+  
+    
+    <!-- (2nd row) 4-drop boxes, sort order & view type -->
+    
+        <div class="row-2  ">
+            <div class="drop-boxes-div">
+                <ul class="p-0">
+                    <div onclick="x()" class="drop-inside-div">
+                    <li id="ModelDropBox">
+                        <span id="ModelDropBoxs">Model</span>
+                        <i id="i1" class="fas fa-caret-up"></i>
+                    </li>
+                    
+                    </div>
+                <div class="drop-inside-div"id="SizeDropBox">
+                    <li onclick="y()">
+                        
+                            <span id="SizeDropBoxs">Size</span>
+                            <i id="i2" class="fas fa-caret-up"></i>
+                    </li>
+                </div>
+                <div onclick="z()" class="drop-inside-div" id="ColorDropBox">
+                    <li>
+                        
+                            <span id="ColorDropBoxs">Color</span>
+                            <i id="i3" class="fas fa-caret-up"></i>
+                    </li>
+                </div>
+                <div onclick="w()" class="drop-inside-div" id="PriceRangeDropBox">
+                    <li>
+                        
+                            <span id="PriceRangeDropBoxs">Price Range</span>
+                            <i id="i4" class="fas fa-caret-up"></i>
+                    </li>
+                </div>
+
+                    
+
+                </ul>
+            </div>
+
+            <div class="sort-order-div">
+                <label for="suggested-dropbox-select" class="sort-order-label">Sort Order:</label>
+                <select class="suggested-dropbox-select" id="suggested-dropbox-id">
+                    <option>Suggested</option>
+                    <option>New In</option>
+                    <option>Best Sellers</option>
+                    <option>Discount Rate</option>
+                    <option>Price(Descending)</option>
+                    <option>Price(Ascending)</option>
+
+                </select>
+            </div>
+
+            <div class="view-type-div">
+                <label class="view-type-class" >View Type:</label>
+                
+                    <i class="fas fa-chess-knight"></i>
+                    <i class="fas fa-chess-rook"></i>
+                    <i class="fas fa-chess-queen"></i>
+                
+
+            </div>
+
+        </div>
+        
+        
+    
+    <!-- (3rd row)  -->
+    
+        <div class="row-3">
+            <label for="Selected-filters-div">Selected Filters:</label>
+              
+                <a href="" onmouseover="OnMouseOver3()" onmouseout="OnMouseOut3()">
+                  <i  id="xFontAwesom" class="far fa-times-circle"></i>
+                <span class="selected-filter-name-span" id="pageName2">MAN</span>
+              </a>
+            <a href="" class="clear-filter-ancor"><span>Clear Selected Filters</span></a>
+        </div>
+    <!-- End (3rd row) -->
+    <!-- start items rows -->
+    <div class="items-row4 d-flex-column">
+        <!--start first (4th row) Items -->
+        <div class="row-4">
+            <div class="item">
+                <img src="../images/200.jpg">
+                <div class="select-size">
+                    <select></select>
+                    <button onclick="setToCar1()" id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                    <button onclick="pp()" class="add-to-wishlist" id="add-to-wishlist"><i id="ii " class="far fa-heart"></i></button>
+                </div>
+                <a href="" id="item-name">Relax fit Zipper</a>
+                <div>
+                    <h6>450EGP</h6>
+                    <span id="item-price">399 EGP</span>
+                </div>
+                
+                
+            </div>
+            <div class="item">
+                <img src="../images/201.jpg">
+                <div class="select-size">
+                    <select></select>
+                    <button onclick="setToCar2()" id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                    <button  id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                </div> 
+                <a href="" id="item-name">Relax fit Zipper</a>
+                <div>
+                    <h6>450EGP</h6>
+                    <span id="item-price">399 EGP</span>
+                </div>
+                
+            </div>
+            <div class="item">
+                <img src="../images/202.jpg">
+                <div class="select-size">
+                    <select></select>
+                    <button onclick="setToCar3()" id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                    <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                </div>
+                <a href="" id="item-name">Relax fit Zipper</a>
+                <div>
+                    <h6>450EGP</h6>
+                <span id="item-price">399 EGP</span>
+                </div>
+                
+            </div>
+        </div>
+        <!-- end first Row -->
+        <!-- start sec Row  -->
+            <div class="row-4">
+                <div class="item">
+                    <img src="../images/203.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button onclick="setToCar4()" id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                        <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                    
+                </div>
+                <div class="item">
+                    <img src="../images/204.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button onclick="setToCar5()"id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                        <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <img src="../images/205.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button id="add-to-basket" onclick="setToCar6()"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                    <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                </div>
+        
+            </div>
+            <!-- end sec Row -->
+        <!-- start third Row  -->
+            <div class="row-4">
+                <div class="item">
+                    <img src="../images/206.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button id="add-to-basket" onclick="setToCar7()"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                        <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                    
+                </div>
+                <div class="item">
+                    <img src="../images/207.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button id="add-to-basket" onclick="setToCar8()"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                        <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <img src="../images/208.jpg">
+                    <div class="select-size">
+                        <select></select>
+                        <button onclick="setToCar9()" id="add-to-basket"><i class="fab fa-shopify"></i></button>
+                        <button id="add-to-wishlist"><i class="far fa-heart"></i></button>
+                    </div>
+                    <a href="" id="item-name">Relax fit Zipper</a>
+                    <div>
+                        <h6>450EGP</h6>
+                    <span id="item-price">399 EGP</span>
+                    </div>
+                    
+                </div>
+        
+            </div>
+            <!-- end third Row -->
+        
+ </div>
+   <!--End  items rows -->
+    </div>
+    <!-- end Container -->
+    <!-- Start droppedDownDiv (For the third row drop downs) -->
+    <div id="ModelDropDownDiv" class="droppedDownDiv">
+        <div class="quickSearchModel">
+            <label>Quick Search</label>
+            <input type="search" id="searchBarInModel" >
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                </div>
+                <div class="col-3">
+
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                    <div class="ChechBoxDiv">
+                        <input type="checkbox">
+                        <label>Trousers</label>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+         
+    </div>
+    <div id="SizeDropDownDiv" class="droppedDownDiv">
+      <div class="container">
+          <div class="row">
+              <div class="col-3">
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+              </div>
+              <div class="col-3">
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+              </div>
+              <div class="col-3">
+
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+                  <div class="ChechBoxDiv">
+                      <input type="checkbox">
+                      <label>Trousers</label>
+                  </div>
+              </div>
+              
+              </div>
+          </div>
+          
+       
+  </div>
+  <div id="ColorDropDownDiv" class="droppedDownDiv">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+            </div>
+            <div class="col-3">
+
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+                <div class="ChechBoxDiv">
+                    <input type="checkbox">
+                    <label>Trousers</label>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+        
+
+
+</div>
+<div id="PriceRangeDropDownDiv" class="droppedDownDiv">
+  <div class="container">
+      <div class="row">
+          <div class="col-3">
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+          </div>
+          <div class="col-3">
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+          </div>
+          <div class="col-3">
+
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+              <div class="ChechBoxDiv">
+                  <input type="checkbox">
+                  <label>Trousers</label>
+              </div>
+          </div>
+          
+          </div>
+      </div>
+</div>
+    <!-- End droppedDownDiv (For the third row drop downs) -->
+
+    <footer>
+        <!-- start footer -->
+       <footer class="p-3">
+        <div class="row mt-3 ">
+        <div class="col-3"style="font-size:12px">
+          <i class="fas fa-phone-volume me-2 p-2 " style="color:#FF5700 ; font-size: 25px;"> </i>
+          Cash on Delivery
+        </div>
+        <div class="col-3"style="font-size:12px" >
+          <i class="fas fa-truck me-2 p-2"  style="color:#FF5700 ; font-size: 25px;"> </i>
+  Product Replacement at Store
+        </div>
+        <div class="col-3"style="font-size:12px">
+          <i class="fas fa-store  me-2 p-2" style="color:#FF5700 ;font-size: 25px; "> </i>
+          Easy & Free Return via Aramex
+        </div>
+        <div class="col-3" style="font-size:12px">
+          <i class="fas fa-home me-2 p-2" style="color:#FF5700 ; font-size: 25px;"> </i>
+          Customer Services
+          WhatsApp: 
+          +2010 334 558 58
+        </div>
+       </div>
+       <hr>
+  <div class="row justify-content-between ">
+    <div class="col-3" style="color: #FF5700;">
+  To subscribe to the newsletter
+  </div>
+  <div class="col d-flex justify-content-end">
+  <div class="radio-male radio me-2" onclick="checkMF(this)"><div></div></div><span class="me-3 pt-1">Female</span>
+  <div class="radio-female radio me-2" onclick="checkMF(this)"><div></div></div><span class="me-3 pt-1">Male</span>
+  <div class="email-conta">
+    <input type="email" name="email-shallow" id="emailshallow">
+    <button> Register</button>
+  </div>
+  </div>
+  </div>
+  <div class="d-flex justify-content-end mt-2">
+    <div class="check me-1" onclick="cheFooter()">
+      <div></div>
+    </div>
+    <a id="policy"href="#">I accept the Confidenciality Policy</a>
+  </div>
+  <div class="row bg-gray mt-4">
+    <div class="col-3">
+      <h4>DEFACTO</h4>
+      <span><a href="#" class="footer-links">Corporate Information</a></span><br>
+      <span><a href="#" class="footer-links"> About Us</a></span><br>
+      <span><a href="#" class="footer-links"> Human Resources</a></span>
+    </div>
+    <div class="col-3">
+      <h4>Customer Service</h4>
+      <span><a href="#" class="footer-links">Frequently Asked Questions</a></span><br>
+      <span><a href="#" class="footer-links">Shipping and Delivery</a></span><br>
+      <span><a href="#" class="footer-links"> Payment Options</a></span><br>
+      <span><a href="#" class="footer-links"> Personal Data Protection Policy</a></span>
+    </div>
+    <div class="col-3">
+      <h4>Exclusive Pages</h4>
+      <span><a href="#" class="footer-links">Contacts</a></span><br>
+      <span><a href="#" class="footer-links">Guest Order Tracking</a></span><br>
+      
+    </div>
+  </div> 
+  <div class="row mt-4">
+    <h5>TOP CATEGORIES</h5>
+    <div class="col-2">
+  <span class="footer-links">Woman</span><br>
+  <span class="footer-links">Man</span><br>
+  <span class="footer-links">Kids</span><br>
+  <span class="footer-links">Accessories</span><br>
+  <span class="footer-links">Baby</span><br>
+    </div>
+    <div class="col-2">
+  <span class="footer-links">Woman Pullover</span><br>
+  <span class="footer-links">Woman Trousers</span><br>
+  <span class="footer-links">Woman Cardigan</span><br>
+  <span class="footer-links">Woman Coat</span><br>
+  <span class="footer-links">Woman Sweatshirt</span><br>
+    </div>
+    <div class="col-2">
+  <span class="footer-links">Man Pullover</span><br>
+  <span class="footer-links">Man Cardigan</span><br>
+  <span class="footer-links">Man Trousers</span><br>
+  <span class="footer-links">Man Jeans</span><br>
+  <span class="footer-links">Man Sweatshirt</span><br>
+    </div>
+    <div class="col-2">
+  <span class="footer-links">Girl Set</span><br>
+  <span class="footer-links">Girl Dress</span><br>
+  <span class="footer-links">Girl Trousers</span><br>
+  <span class="footer-links">Boy Set</span><br>
+  <span class="footer-links">Boy Shirt</span><br>
+    </div>
+    <div class="col-2">
+  <span class="footer-links">Baby Girl Newborn</span><br>
+  <span class="footer-links">Baby Boy Newborn</span><br>
+  <span class="footer-links">Woman Scarf</span><br>
+  <span class="footer-links">Man Scarf</span><br>
+  <span class="footer-links">Perfume</span><br>
+    </div>
+    <div class="col-2">
+  <span class="footer-links">Conservative Collection</span><br>
+  <span class="footer-links">Sportswear</span><br>
+  <span class="footer-links">Homewear</span><br>
+  <span class="footer-links">Underwear</span><br>
+  <span class="footer-links">Maternity Wear</span><br>
+    </div>
+  </div>
+        <!-- end footer -->
+      </footer>
+        </div>
+  <div class="login-reg-float  d-flex-column shadow" id="floating" style="font-size: 12px;">
+  <div class="welcom-user d-flex pt-3 pb-2 ps-2" >
+    welcome : <span id="usr-name-login" style="font-size: 12px; font-weight: bold;">Hussein Abdelateef</span>
+  </div>
+  
+  <!-- Welcome hussein abdelateef
+  Orders
+  ❯
+  My Account
+   -->
+  <ul>
+    <li><i class="fas fa-user-alt ps-2 pe-2"></i><a href="#"> My Account</a></li>
+    <li><i class="fas fa-map-marked  ps-2 pe-2"></i><a href="#">Address Book</a></li>
+    <li><i class="fas fa-cart-plus ps-2 pe-2"></i><a href="#">My Orders</a></li>
+    <li><i class="fas fa-newspaper ps-2 pe-2"></i><a href="#">Newsletter</a></li>
+    <li><i class="fas fa-hand-holding-usd ps-2 pe-2"></i><a href="#">MoneyPoint Information</a></li>
+    <li> <i class="fas fa-percentage ps-2 pe-2"></i><a href="#">Discount Coupons</a></li>
+    <li><i class="fas fa-sign-out-alt ps-2 pe-2"></i><a href="#">Log out</a></li>
+  </ul>
+  </div>
+      <!-- end body cards -->
+    </footer>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+       $(document).ready(function(){   
+      $( function() {
+    var availableTags = [
+      "HOMEWEAR",
+      "PLUS SIZE",  
+      "TROUSERS",
+      "KNITWEAR",
+      "SHIRT&BLOUSE",
+      "SWEATSHIRTS&HOODIES ",
+      "JEANS",
+      "TUNICS", 
+      "HOMEWEAR",
+      "PLUS SIZE",
+      "UNDERWEAR ",
+      "ACCESSSORIES"
+    ];
+    $( "#search" ).autocomplete({
+      source: availableTags
+    });
+  } );
+});
+    </script>
+    <script src="../js/man.js"></script>
+</body>
+</html>
